@@ -1,0 +1,13 @@
+.logo {
+  font-family: var(--font-family-neutralface);
+  font-size: 18px;
+  line-height: 19px;
+  color: var(--color-middle-blue);
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+
+  &:hover,
+  &:active {
+    color: var(--color-purple);
+  }
+}

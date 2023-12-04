@@ -1,0 +1,17 @@
+.nav {
+  display: flex;
+  align-items: center;
+  grid-gap: clamp(45px, 3.125vw, 60px);
+
+  &__link {
+    font-size: clamp(14px, 2.344vw, 18px);
+    line-height: clamp(18px, 1.667vw, 24px);
+    font-weight: 700;
+    color: var(--color-dark-charcoal);
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: var(--color-middle-blue);
+    }
+  }
+}

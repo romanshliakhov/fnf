@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="Ua">
+@include('partials/head.html',{})
+
+<body>
+  <div class="wrapper">
+    @include('partials/header.html',{})
+
+    <main class="main">
+      <section class="hero">
+        <div class="hero__wrapp">
+          <div class="hero__left">
+            <div class="hero__details">
+              <div class="container">
+                <div class="hero__info">
+                  <div class="hero__info-head">Привіт, я Таня</div>
+
+                  <h1 class="hero__title">Study English like a movie star</h1>
+
+                  <p class="hero__descr text">Навчу говорити англійською мовою, дивлячись улюблені фільми та серіали</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero__movies">
+              <div class="hero__movies-divider">
+                <!-- <svg width='630' height='8'>
+                  <use href='img/sprite/sprite.svg#film'></use>
+                </svg> -->
+                <picture>
+                  <source type='image/webp' srcset='img/divider.webp'>
+                  <img width='630' height='8' src='img/divider.png' alt=''>
+                </picture>
+              </div>
+
+              <div class="hero__slider swiper-container">
+                <div class="hero__slider-wrapper swiper-wrapper">
+                  <div class="hero__slider-slide swiper-slide">
+                    <picture>
+                      <source type='image/webp' srcset='img/workbooks/wifes.webp'>
+                      <img width='88' height='62' src='img/workbooks/wifes.png' alt='WIfes'>
+                    </picture>
+                  </div>
+
+                  <div class="hero__slider-slide swiper-slide">
+                    <picture>
+                      <source type='image/webp' srcset='img/workbooks/you.webp'>
+                      <img width='88' height='62' src='img/workbooks/you.png' alt='you'>
+                    </picture>
+                  </div>
+
+                  <div class="hero__slider-slide swiper-slide">
+                    <picture>
+                      <source type='image/webp' srcset='img/workbooks/education.webp'>
+                      <img width='88' height='62' src='img/workbooks/education.png' alt='education'>
+                    </picture>
+                  </div>
+
+                  <div class="hero__slider-slide swiper-slide">
+                    <picture>
+                      <source type='image/webp' srcset='img/workbooks/goat.webp'>
+                      <img width='88' height='62' src='img/workbooks/goat.png' alt='goat'>
+                    </picture>
+                  </div>
+
+                  <div class="hero__slider-slide swiper-slide">
+                    <picture>
+                      <source type='image/webp' srcset='img/workbooks/wednesday.webp'>
+                      <img width='88' height='62' src='img/workbooks/wednesday.png' alt='wednesday'>
+                    </picture>
+                  </div>
+
+                  <div class="hero__slider-slide swiper-slide">
+                    <picture>
+                      <source type='image/webp' srcset='img/workbooks/friends.webp'>
+                      <img width='88' height='62' src='img/workbooks/friends.png' alt='friends'>
+                    </picture>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero__movies-divider">
+                <!-- <svg width='630' height='8'>
+                  <use href='img/sprite/sprite.svg#film'></use>
+                </svg> -->
+                <picture>
+                  <source type='image/webp' srcset='img/divider.webp'>
+                  <img width='630' height='8' src='img/divider.png' alt=''>
+                </picture>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__right">
+            <div class="hero__image">
+              <picture>
+                <source type='image/webp' srcset='img/tatiana.webp'>
+                <img width='560' height='602' src='img/tatiana.png' alt='Me'>
+              </picture>
+            </div>
+
+            <a class="hero__link link" href="#"><span>ЗАПИСАТИСЯ</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about__wrapp">
+            <h2 class="about__title">про мене</h2>
+
+            <div class="about__info">
+              <div class="about__image">
+                <picture>
+                  <source type='image/webp' srcset='img/about-bg.webp'>
+                  <img width='560' height='646' src='img/about-bg.png' alt='Про мене'>
+                </picture>
+              </div>
+
+              <div class="about__descr">
+                <p>Всім привіт, мене звати Таня і я репетитор англійської з досвідом викладання вже понад 7 років. Я</p>
+
+                <ul>
+                  <li>— пройшла CELTA в Великобританії, курс для вчителів, який дозволяє викладати у будь-якій країні світу;</li>
+                  <li>— брала участь у програмі «Work and Travel», 3 місяці жила та працювала в Америці;</li>
+                  <li>— 9 місяців жила та працювала в Великобританії;</li>
+                  <li>— працювала з китайськими дітками онлайн;</li>
+                  <li>— обожнюю викладання і своїх учнів;</li>
+                  <li>— моя любов до перегляду фільмів та серіалів в оригіналі почалась, коли я була в Америці
+                    і придбала диск з новим сезоном «Щоденників вампіра», відтоді я всім рекомендую вдосконалювати англійську, насолоджуючись переглядом улюблених фільмів та серіалів.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <div class="container">
+          <div class="services__wrapp">
+            <h2 class="services__title">мої послуги</h2>
+
+            <ul class="services__list">
+              <li class="services__list-item">
+                <div class="service">
+                  <div class="service__info">
+                    <div class="service__count">1</div>
+
+                    <div class="service__title">Заняття зі мною</div>
+
+                    <p class="service__descr">
+                      -індивідуальні: 350 грн/60 хвилин<br>
+                      -парні: 250 грн/60 хвилин<br>
+                      -групові: 200 грн/1 год 20 хвилин
+                    </p>
+                  </div>
+
+                  <a class="service__link link" href="#"><span>ЗАПИСАТИСЯ</span></a>
+                </div>
+              </li>
+
+              <li class="services__list-item">
+                <div class="service">
+                  <div class="service__info">
+                    <div class="service__count">2</div>
+
+                    <div class="service__title">Заняття з викладачами команди</div>
+
+                    <p class="service__descr">
+                      -індивідуальні: 300 грн/60 хвилин<br>
+                      -парні: 200 грн/60 хвилин<br>
+                    </p>
+                  </div>
+
+                  <a class="service__link link" href="#"><span>ЗАПИСАТИСЯ</span></a>
+                </div>
+              </li>
+
+              <li class="services__list-item">
+                <div class="service">
+                  <div class="service__info">
+                    <div class="service__count">3</div>
+
+                    <div class="service__title">Робочі зошити</div>
+
+                    <p class="service__descr">
+                      Яскраві та корисні воркбуки для вивчення англійської
+                      допоможуть поліпшити сприйняття на слух та вивчити багато крутої лексики. Зошити включають словник, завдання до, під час та після перегляду, відповіді для самоперевірки.
+                    </p>
+                  </div>
+
+                  <a class="service__link link" href="#"><span>ПЕРЕГЛЯНУТИ АСОРТИМЕНТ</span></a>
+                </div>
+              </li>
+
+              <li class="services__list-item">
+                <div class="service">
+                  <div class="service__info">
+                    <div class="service__count">4</div>
+
+                    <div class="service__title">Заняття зі мною</div>
+
+                    <p class="service__descr">
+                      -індивідуальні: 350 грн/60 хвилин<br>
+                      -парні: 250 грн/60 хвилин<br>
+                      -групові: 200 грн/1 год 20 хвилин
+                    </p>
+                  </div>
+
+                  <a class="service__link link" href="#"><span>ЗАПИСАТИСЯ</span></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="subscribe">
+        <div class="container">
+          <div class="subscribe__wrapp">
+            <div class="subscribe__bg">
+              <picture>
+                <source type='image/webp' srcset='img/subscribe-bg.webp'>
+                <img width='998' height='527' src='img/subscribe-bg.png' alt='Subscribe'>
+              </picture>
+            </div>
+
+            <h2 class="subscribe__title">
+              <span>підписуйтесь на інстаграм та отримуйте безкоштовні матеріали</span>
+
+              <svg width='30' height='65'>
+                <use href='img/sprite/sprite.svg#arrow-down'></use>
+              </svg>
+            </h2>
+
+            <a class="subscribe__link link" href="#"><span>ЗАПИСАТИСЯ</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="feedbacks" id="feedbacks">
+        <div class="container">
+          <div class="feedbacks__wrapp">
+            <div class="feedbacks__top">
+              <h2 class="feedbacks__title">Що говорять мої учні?</h2>
+
+              <a class="feedbacks__more" href="#">Більше відгуків у Instagram</a>
+            </div>
+
+            <ul class="feedbacks__list">
+              <li class="feedbacks__list-item">
+                <div class="feedback">
+                  <picture>
+                    <source type='image/webp' srcset='img/feedbacks/feedback1.webp'>
+                    <img width='340' height='218' src='img/feedbacks/feedback1.png' alt='feedback1'>
+                  </picture>
+                </div>
+              </li>
+              <li class="feedbacks__list-item">
+                <div class="feedback">
+                  <picture>
+                    <source type='image/webp' srcset='img/feedbacks/feedback2.webp'>
+                    <img width='340' height='218' src='img/feedbacks/feedback2.png' alt='feedback2'>
+                  </picture>
+                </div>
+              </li>
+              <li class="feedbacks__list-item">
+                <div class="feedback">
+                  <picture>
+                    <source type='image/webp' srcset='img/feedbacks/feedback3.webp'>
+                    <img width='340' height='218' src='img/feedbacks/feedback3.png' alt='feedback3'>
+                  </picture>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq" id="faq">
+        <div class="container">
+          <div class="faq__wrapp">
+            <h2 class="faq__title">Питання-відповіді:</h2>
+
+            <ul class="faq__questions" data-spollers data-one-spoller>
+              <li class="faq__questions-item">
+                <button class="faq__question" tabindex="-1" type="button" data-spoller>
+                  <span>Як відбуваються уроки?</span>
+
+                  <svg width='46' height='38'>
+                    <use href='img/sprite/sprite.svg#chevron-down'></use>
+                  </svg>
+                </button>
+
+                <div class="faq__answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex molestias veniam dolores. Omnis.</div>
+              </li>
+              <li class="faq__questions-item">
+                <button class="faq__question" tabindex="-1" type="button" data-spoller>
+                  <span>Чи є пробний урок?</span>
+
+                  <svg width='46' height='38'>
+                    <use href='img/sprite/sprite.svg#chevron-down'></use>
+                  </svg>
+                </button>
+
+                <div class="faq__answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex molestias veniam dolores. Omnis.</div>
+              </li>
+              <li class="faq__questions-item">
+                <button class="faq__question" tabindex="-1" type="button" data-spoller>
+                  <span>Як оплачувати заняття?</span>
+
+                  <svg width='46' height='38'>
+                    <use href='img/sprite/sprite.svg#chevron-down'></use>
+                  </svg>
+                </button>
+
+                <div class="faq__answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex molestias veniam dolores. Omnis.</div>
+              </li>
+              <li class="faq__questions-item">
+                <button class="faq__question" tabindex="-1" type="button" data-spoller>
+                  <span>Де проходять заняття?</span>
+
+                  <svg width='46' height='38'>
+                    <use href='img/sprite/sprite.svg#chevron-down'></use>
+                  </svg>
+                </button>
+
+                <div class="faq__answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex molestias veniam dolores. Omnis.</div>
+              </li>
+              <li class="faq__questions-item">
+                <button class="faq__question" tabindex="-1" type="button" data-spoller>
+                  <span>Чи можна скасувати або перенести заняття?</span>
+
+                  <svg width='46' height='38'>
+                    <use href='img/sprite/sprite.svg#chevron-down'></use>
+                  </svg>
+                </button>
+
+                <div class="faq__answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex molestias veniam dolores. Omnis.</div>
+              </li>
+              <li class="faq__questions-item">
+                <button class="faq__question" tabindex="-1" type="button" data-spoller>
+                  <span>Заняття лише за підручником?</span>
+
+                  <svg width='46' height='38'>
+                    <use href='img/sprite/sprite.svg#chevron-down'></use>
+                  </svg>
+                </button>
+
+                <div class="faq__answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex molestias veniam dolores. Omnis.</div>
+              </li>
+              <li class="faq__questions-item">
+                <button class="faq__question" tabindex="-1" type="button" data-spoller>
+                  <span>Якщо я хочу вивчати англійську за фільмами, як це працює?</span>
+
+                  <svg width='46' height='38'>
+                    <use href='img/sprite/sprite.svg#chevron-down'></use>
+                  </svg>
+                </button>
+
+                <div class="faq__answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex molestias veniam dolores. Omnis.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @include('partials/footer.html',{})
+  </div>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+.footer {
+  padding: 55px clamp(30px, 3.125vw, 60px) clamp(55px, 4.427vw, 85px);
+  display: flex;
+  flex-direction: column;
+  grid-gap: 25px;
+  background-color: var(--color-grey);
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__bot {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    grid-gap: clamp(45px, 3.125vw, 60px);
+
+    button {
+      font-family: var(--font-family-manrope);
+      font-size: clamp(12px, 2.083vw, 16px);
+      line-height: clamp(16px, 2.604vw, 20px);
+      color: var(--color-gray);
+      transition: all 0.3s ease;
+
+      &:hover,
+      &:active {
+        color: var(--color-middle-blue);;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+

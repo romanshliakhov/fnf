@@ -1,0 +1,27 @@
+.socials {
+  display: flex;
+  align-items: center;
+  grid-gap: 20px;
+
+  &__instagram,
+  &__tiktok {
+    svg {
+      fill: var(--color-middle-blue);
+      transition: all 0.3s ease;
+    }
+  }
+
+  &__instagram:hover {
+    svg {
+      fill: var(--color-purple);
+    }
+  }
+
+  &__tiktok:hover {
+    svg {
+      fill: var(--color-black);
+    }
+  }
+
+
+}
