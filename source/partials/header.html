@@ -1,35 +1,116 @@
 <header class="header">
-  <a class="header__logo logo" href="/">@tatiana_english</a>
+  <a class="header__logo logo" href="/"><span>FNF</span>test</a>
 
   <ul class="header__nav nav">
     <li class="nav__item">
-      <a href="#about" class="nav__link">Про мене</a>
+      <a class="nav__link" href="#">Popular</a>
     </li>
     <li class="nav__item">
-      <a href="#services" class="nav__link">Види навчання</a>
+      <a class="nav__link" href="#">New</a>
     </li>
     <li class="nav__item">
-      <a href="#feedbacks" class="nav__link">Відгуки</a>
+      <a class="nav__link" href="#">Mobile mods</a>
     </li>
     <li class="nav__item">
-      <a href="#footer" class="nav__link">Контакти</a>
+      <div class="nav__link">
+        <div class="nav__dropdown downloads">
+          <div class="downloads__trigger">
+            <span>Download FNF</span>
+
+            <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#angle-down'></use>
+            </svg>
+          </div>
+
+          <ul class="downloads__body">
+            <li class="downloads__item">
+              <a class="downloads__link" href="#">FNF for Windows</a>
+            </li>
+            <li class="downloads__item">
+              <a class="downloads__link" href="#">FNF for Linux</a>
+            </li>
+            <li class="downloads__item">
+              <a class="downloads__link" href="#">FNF for MacOS</a>
+            </li>
+            <li class="downloads__item">
+              <a class="downloads__link" href="#">FNF Mobile APK</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link" href="#">Week 7</a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link" href="#">HD mods</a>
     </li>
   </ul>
 
-  <ul class="header__socials socials">
-    <li class="socials__item">
-      <a class="socials__instagram" href="#">
-        <svg width='30' height='30'>
-          <use href='img/sprite/sprite.svg#instagram'></use>
+  <div class="header__lang lang">
+    <div class="lang__header">
+      <div class="lang__current">
+        <svg width='24' height='16'>
+          <use href='img/sprite/sprite.svg#eng'></use>
         </svg>
-      </a>
-    </li>
-    <li class="socials__item">
-      <a class="socials__tiktok" href="#">
-        <svg width='30' height='30'>
-          <use href='img/sprite/sprite.svg#tiktok'></use>
-        </svg>
-      </a>
-    </li>
-  </ul>
+
+        <span>English</span>
+      </div>
+
+      <svg class="lang__arrow" width='20' height='20'>
+        <use href='img/sprite/sprite.svg#angle-down'></use>
+      </svg>
+    </div>
+
+    <div class="lang__body">
+      <ul class="lang__variants">
+        <li class="lang__variants-item" data-choice='choosen'>
+          <div class="lang__variant">
+            <svg width='24' height='16'>
+              <use href='img/sprite/sprite.svg#eng'></use>
+            </svg>
+
+            <span>English</span>
+          </div>
+        </li>
+        <li class="lang__variants-item" data-choice='choosen'>
+          <div class="lang__variant">
+            <svg width='24' height='16'>
+              <use href='img/sprite/sprite.svg#france'></use>
+            </svg>
+
+            <span>French</span>
+          </div>
+        </li>
+        <li class="lang__variants-item" data-choice='choosen'>
+          <div class="lang__variant">
+            <svg width='24' height='16'>
+              <use href='img/sprite/sprite.svg#south-korea'></use>
+            </svg>
+
+            <span>Korean</span>
+          </div>
+        </li>
+        <li class="lang__variants-item" data-choice='choosen'>
+          <div class="lang__variant">
+            <svg width='24' height='16'>
+              <use href='img/sprite/sprite.svg#spain'></use>
+            </svg>
+
+            <span>Spanish</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="mobile">
+    <div class="mobile__menu"></div>
+  </div>
 </header>

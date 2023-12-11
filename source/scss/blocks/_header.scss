@@ -1,5 +1,4 @@
 .header {
-  position: absolute;
   width: 100%;
   display: flex;
   align-items: center;
@@ -7,23 +6,5 @@
   padding: 22px clamp(30px, 4.167vw, 60px);
   z-index: 5;
 
-  &__socials {
-    svg {
-      fill: #F8E5A4;
-    }
-  }
 
-  &__nav {
-    @media screen and (max-width: 1240px) {
-      li:nth-last-child(-n+2) {
-        a {
-          color: var(--color-white);
-
-          &:hover {
-            color: var(--color-purple);
-          }
-        }
-      }
-    }
-  }
 }

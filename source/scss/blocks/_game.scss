@@ -1,0 +1,10 @@
+.game {
+  padding: 112px 0;
+
+  &__wrapp {
+    display: grid;
+    grid-template-columns: 1fr 246px;
+    grid-gap: 64px;
+  }
+
+}

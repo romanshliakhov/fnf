@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="En">
+@include('partials/head.html',{})
+
+<body>
+  <div class="wrapper">
+    @include('partials/header.html',{})
+
+    <main class="main">
+      <section class="game">
+        <div class="container">
+          <div class="game__wrapp">
+            <div class="game__inner">
+              <div class="breadcrumbs">home</div>
+
+              <div class="game__information">
+                <p>game banner</p>
+
+                <div class="game__heading">
+                  <h1>FNF vs Bob and Bosip <br> "The Expansion Update"</h1>
+                </div>
+
+                <div class="game__info">
+                  <div class="game__controls">
+                    Game controls
+                  </div>
+
+                  <div class="game__description">
+                    Description
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <aside class="game__catalogues">
+              <div class="game_catalogue">
+                <div class="game__catalogue-head">
+                  <div class="game__catalogue-title">Popular</div>
+
+                  <a class="game__catalogue-link" href="#">See all</a>
+                </div>
+
+                <ul class="game__catalogue-items">
+                  <li class="game__catalogue-item">
+                    game 1
+                  </li>
+                </ul>
+              </div>
+
+              <div class="game_catalogue">
+                <div class="game__catalogue-head">
+                  <div class="game__catalogue-title">New</div>
+
+                  <a class="game__catalogue-link" href="#">See all</a>
+                </div>
+
+                <ul class="game__catalogue-items">
+                  <li class="game__catalogue-item">
+                    game 1
+                  </li>
+                </ul>
+              </div>
+
+              <div class="game_catalogue">
+                <div class="game__catalogue-head">
+                  <div class="game__catalogue-title">Recommended</div>
+
+                  <a class="game__catalogue-link" href="#">See all</a>
+                </div>
+
+                <ul class="game__catalogue-items">
+                  <li class="game__catalogue-item">
+                    game 1
+                  </li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @include('partials/footer.html',{})
+  </div>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,17 +1,34 @@
 .nav {
+  position: relative;
   display: flex;
   align-items: center;
-  grid-gap: clamp(45px, 3.125vw, 60px);
+  grid-gap: clamp(15px, 2.581vw, 32px);
+
+  @media screen and (max-width: 1024px) {
+    grid-gap: 15px;
+  }
+
+  @media screen and (max-width: 992px) {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-gap: 22px;
+  }
+
+  &__item {
+    position: relative;
+  }
 
   &__link {
-    font-size: clamp(14px, 2.344vw, 18px);
-    line-height: clamp(18px, 1.667vw, 24px);
-    font-weight: 700;
-    color: var(--color-dark-charcoal);
-    transition: all 0.3s ease;
-
-    &:hover {
-      color: var(--color-middle-blue);
-    }
+    position: relative;
+    display: flex;
+    align-items: center;
+    grid-gap: 4px;
   }
 }
+
+
+
+
+
+

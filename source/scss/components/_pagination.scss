@@ -1,0 +1,38 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 8px;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+  }
+
+  &__list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+
+    &.active,
+    &:hover {
+      background-color: var(--color-purple);
+      color: var(--color-white);
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease;
+  }
+}

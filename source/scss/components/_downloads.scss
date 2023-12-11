@@ -1,0 +1,17 @@
+.downloads {
+  position: relative;
+
+  &__trigger {
+    display: flex;
+    align-items: center;
+    grid-gap: 4px;
+  }
+
+
+  &__body {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+  }
+}

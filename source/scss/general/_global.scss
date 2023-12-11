@@ -4,10 +4,12 @@ body {
   height: 100%;
   width: 100%;
   position: relative;
-  font-family: var(--font-family-manrope);
-  font-size: clamp(16px, 1.25vw, 18px);
-  line-height: clamp(24px, 1.875vw, 27px);
-  color: var(--color-dark-charcoal);
+  font-family: var(--font-family-exo);
+  font-size: 16px;
+  line-height: 22px;
+  // font-size: clamp(16px, 1.25vw, 18px);
+  // line-height: clamp(24px, 1.875vw, 27px);
+  color: var(--color-black);
 }
 
 html {
@@ -47,7 +49,6 @@ button {
   padding: 0;
   margin: 0;
   color: currentColor;
-  line-height: initial;
 }
 
 ul,
@@ -92,9 +93,9 @@ input {
 }
 
 textarea {
-    width: 100%;
-    outline: none;
-    border: none;
+  width: 100%;
+  outline: none;
+  border: none;
 }
 
 label {
@@ -128,11 +129,11 @@ input[type="number"] {
 }
 
 .container {
-  width: 100%;
-  // max-width: 1200px;
-  margin: 0 auto;
   position: relative;
-  padding: 0 clamp(30px, 3.125vw, 60px);
+  max-width: 1088px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
 svg {
@@ -140,8 +141,8 @@ svg {
 }
 
 .body-scroll {
-    position: fixed;
-    overflow-y: hidden;
+  position: fixed;
+  overflow-y: hidden;
 }
 
 
