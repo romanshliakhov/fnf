@@ -1,5 +1,5 @@
 .publication {
-  padding: 112px 0;
+  padding: clamp(80px, 10.938vw, 112px) 0;
 
   .container {
     max-width: 752px;
@@ -47,7 +47,7 @@
         margin-left: 14px;
 
         li {
-        list-style-type: lower-alpha;
+          list-style-type: lower-alpha;
         }
       }
     }
@@ -59,8 +59,25 @@
     .row,
     .row-grey {
       display: grid;
-      grid-template-columns: repeat(auto-fill, 208px);
-      grid-gap: 48px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: clamp(24px, 4.688vw, 48px);
+
+      li {
+        list-style-type: none;
+      }
+
+      li + li {
+        margin-top: 0;
+      }
+
+      @media (max-width: 576px) {
+        margin-top: 48px;
+        grid-template-columns: 100%;
+
+        h3,h4,h5,h6 {
+          margin-top: 0;
+        }
+      }
     }
 
     .row-grey {
