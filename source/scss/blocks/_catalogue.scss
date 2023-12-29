@@ -18,21 +18,41 @@
       width: clamp(32px, 2.778vw, 40px);
       height: clamp(32px, 2.778vw, 40px);
     }
+
+    @media (max-width: 576px) {
+      font-size: 32px;
+      letter-spacing: 0.32px;
+    }
   }
 
   &__items {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 32px 24px;
+    grid-gap: clamp(16px, 2.222vw, 32px) clamp(16px, 1.667vw, 24px);
+
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 576px) {
+      grid-template-columns: 100%;
+    }
   }
 
   &__item {
-    display: flex;
-    flex-direction: column;
+    position: relative;
+    display: grid;
     grid-gap: 16px;
+    grid-template-columns: 100%;
+    transition: all 0.4s ease;
 
     .game__banner {
+      position: relative;
       display: flex;
       border-radius: 16px;
 
@@ -43,10 +63,49 @@
         object-fit: cover;
         border-radius: 16px;
       }
+
+      @media (max-width: 576px) {
+        grid-row: span 2;
+      }
     }
 
     .game__title {
       font-weight: 700;
+
+      @media (max-width: 576px) {
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+
+    .game__rating-btn {
+      background-color: transparent;
+      color: var(--color-white);
+
+      @media (max-width: 576px) {
+        color: var(--color-black);
+        padding: 0;
+      }
+    }
+
+    &:hover {
+      .game__info-hover {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .game__banner::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.80);
+        border-radius: 12px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      grid-template-columns: 34% 1fr;
+      grid-gap: 12px;
     }
   }
 
