@@ -1,51 +1,72 @@
 <header class="header">
   <a class="header__logo logo" href="/"><span>FNF</span>test</a>
 
-  <ul class="header__nav nav">
-    <li class="nav__item">
-      <a class="nav__link" href="#">Popular</a>
-    </li>
-    <li class="nav__item">
-      <a class="nav__link" href="#">New</a>
-    </li>
-    <li class="nav__item">
-      <a class="nav__link" href="#">Mobile mods</a>
-    </li>
-    <li class="nav__item">
-      <div class="nav__link">
-        <div class="nav__dropdown downloads">
-          <div class="downloads__trigger">
-            <span>Download FNF</span>
+  <div class="header__nav nav">
+    <ul class="nav__menu">
+      <li class="nav__menu-item">
+        <a class="nav__menu-link active" href="/index.html">
+          <span class="nav__menu-title active">Popular</span>
+        </a>
+      </li>
 
-            <svg width='20' height='20'>
-              <use href='img/sprite/sprite.svg#angle-down'></use>
-            </svg>
-          </div>
+      <li class="nav__menu-item">
+        <a href="#" class="nav__menu-link">
+          <span class="nav__menu-title">News</span>
+        </a>
+      </li>
 
-          <ul class="downloads__body">
-            <li class="downloads__item">
-              <a class="downloads__link" href="#">FNF for Windows</a>
-            </li>
-            <li class="downloads__item">
-              <a class="downloads__link" href="#">FNF for Linux</a>
-            </li>
-            <li class="downloads__item">
-              <a class="downloads__link" href="#">FNF for MacOS</a>
-            </li>
-            <li class="downloads__item">
-              <a class="downloads__link" href="#">FNF Mobile APK</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </li>
-    <li class="nav__item">
-      <a class="nav__link" href="#">Week 7</a>
-    </li>
-    <li class="nav__item">
-      <a class="nav__link" href="#">HD mods</a>
-    </li>
-  </ul>
+      <li class="nav__menu-item">
+        <a href="#" class="nav__menu-link">
+          <span class="nav__menu-title">Mobile mods</span>
+        </a>
+      </li>
+
+      <li class="nav__menu-item extended">
+        <a href="#" class="nav__menu-link">
+          <span class="nav__menu-title">Download FNF</span>
+
+          <svg width='20' height='20'>
+            <use href='img/sprite/sprite.svg#angle-down'></use>
+          </svg>
+        </a>
+
+        <ul class="nav__menu-second">
+          <li class="nav__second-item">
+            <a href="#" class="nav__menu-link">
+              <span class="nav__menu-title">FNF for Windows</span>
+            </a>
+          </li>
+          <li class="nav__second-item">
+            <a href="#" class="nav__menu-link">
+              <span class="nav__menu-title">FNF for Linux</span>
+            </a>
+          </li>
+          <li class="nav__second-item">
+            <a href="#" class="nav__menu-link">
+              <span class="nav__menu-title">FNF for MacOS</span>
+            </a>
+          </li>
+          <li class="nav__second-item">
+            <a href="#" class="nav__menu-link">
+              <span class="nav__menu-title">FNF Mobile APK</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav__menu-item">
+        <a href="#" class="nav__menu-link">
+          <span class="nav__menu-title">Week 7</span>
+        </a>
+      </li>
+
+      <li class="nav__menu-item">
+        <a href="#" class="nav__menu-link">
+          <span class="nav__menu-title">HD mods</span>
+        </a>
+      </li>
+    </ul>
+  </div>
 
   <div class="header__lang lang">
     <div class="lang__header">

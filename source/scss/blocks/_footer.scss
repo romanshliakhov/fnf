@@ -7,6 +7,10 @@
     align-items: center;
     justify-content: center;
     grid-gap: clamp(24px, 4.167vw, 32px);
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+    }
   }
 }
 

@@ -24,7 +24,7 @@
   }
 
   &__menu {
-    padding: 90px 32px 30px;
+    padding: 120px 32px clamp(32px, 4.883vw, 50px);
     width: 100%;
     flex: 1 auto;
     display: flex;

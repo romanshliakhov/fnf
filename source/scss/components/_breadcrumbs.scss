@@ -4,7 +4,7 @@
   &__wrapp {
     display: flex;
     align-items: center;
-    grid-gap: 20px;
+    grid-gap: clamp(10px, 1.953vw, 20px);
     justify-content: flex-start;
     user-select: none;
     font-size: 14px;
@@ -14,10 +14,7 @@
 
     @media (max-width: 992px) {
       overflow-x: scroll;
-    }
-
-    @media (max-width: 769px) {
-      display: inline-block;
+      overflow-y: hidden;
     }
   }
 
@@ -53,9 +50,5 @@
   &__current {
     white-space: nowrap;
     color: var(--color-black);
-
-    @media (max-width: 769px) {
-      white-space: initial;
-    }
   }
 }
