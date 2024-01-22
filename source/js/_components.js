@@ -4,6 +4,7 @@ import './components/burger.js';
 // import './components/spollers.js';
 import './components/mobileMenu.js';
 import './components/replaceEl.js';
+import './components/seoBlock.js';
 
 
 

@@ -9,8 +9,12 @@ const mobileMenu = function() {
   const navHandler = menu.querySelector('.nav__menu-title');
   const navHandlerSecond = menu.querySelector('.nav__second-title');
 
-  navHandler.addEventListener('click', () => {
-    navLi.classList.toggle('active');
+  // navHandler.addEventListener('click', () => {
+  //   navLi.classList.toggle('active');
+  // })
+
+  navLi.addEventListener('click', () => {
+    navLi.classList.add('active');
   })
 
   // navHandlerSecond.addEventListener('click', () => {
