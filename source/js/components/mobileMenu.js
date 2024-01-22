@@ -5,15 +5,6 @@ const mobileMenu = function() {
   const navLi = menu.querySelector('.extended');
   const navExtendedTrigger = menu.querySelector('span');
 
-
-  const navLiSecond = menu.querySelector('.nav__second-item');
-  const navHandler = menu.querySelector('.nav__menu-title');
-  const navHandlerSecond = menu.querySelector('.nav__second-title');
-
-  // navLi.addEventListener('click', () => {
-  //   navLi.classList.add('active');
-  // })
-
   navExtendedTrigger.addEventListener('click', () => {
     navLi.classList.toggle('active');
     console.log('click');
