@@ -17,7 +17,7 @@
     border-bottom-left-radius: 0;
 
     .header__nav,
-    .header__controls {
+    .header__lang {
       opacity: 1;
       visibility: visible;
     }
@@ -32,7 +32,7 @@
     justify-content: space-between;
 
     .header__nav,
-    .header__controls {
+    .header__lang {
       opacity: 0;
       display: flex;
     }

@@ -3,23 +3,21 @@ const breakpoint = 992;
 const mobileMenu = function() {
   const menu = document.querySelector('.nav__menu');
   const navLi = menu.querySelector('.extended');
+  const navExtendedTrigger = menu.querySelector('span');
 
 
   const navLiSecond = menu.querySelector('.nav__second-item');
   const navHandler = menu.querySelector('.nav__menu-title');
   const navHandlerSecond = menu.querySelector('.nav__second-title');
 
-  // navHandler.addEventListener('click', () => {
-  //   navLi.classList.toggle('active');
+  // navLi.addEventListener('click', () => {
+  //   navLi.classList.add('active');
   // })
 
-  navLi.addEventListener('click', () => {
-    navLi.classList.add('active');
+  navExtendedTrigger.addEventListener('click', () => {
+    navLi.classList.toggle('active');
+    console.log('click');
   })
-
-  // navHandlerSecond.addEventListener('click', () => {
-  //   navLiSecond.classList.toggle('active');
-  // })
 }
 
 const mobileMenuInit = () => {

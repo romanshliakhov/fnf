@@ -21,9 +21,7 @@
       width: 100%;
     }
 
-    &:hover,
-    &:active {
-      .nav__menu-title,
+    &:hover {
       .nav__menu-link {
         color: var(--color-black);
 
@@ -34,6 +32,10 @@
 
       svg {
         transform: scale(-1);
+
+        @media screen and (max-width: 992px) {
+          transform: rotate(-90deg);
+        }
       }
 
       .nav__menu-second {
@@ -58,13 +60,14 @@
       padding: 0 32px;
       z-index: 10;
 
-      .nav__menu-link {
-        justify-content: space-between;
+      span {
+        justify-content: flex-end;
         flex-direction: row-reverse;
-        color: var(--color-purple);
+        color: var(--color-purple) !important;
+        font-size: 18px;
 
         svg {
-          transform: rotate(90deg);
+          transform: rotate(90deg) !important;
         }
       }
 
@@ -77,8 +80,7 @@
     }
   }
 
-  &__menu-title,
-  &__menu-link {
+   &__menu-link {
     width: 100%;
     display: flex;
     align-items: center;
@@ -91,7 +93,7 @@
 
     svg {
       flex-shrink: 0;
-      color: currentColor;
+      fill: currentColor;
       transition: transform 0.3s ease;
     }
 
